@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="729.0" prefWidth="628.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.repasoexamen2023javafx.HelloController">
+   <children>
+      <TableView fx:id="tableViewPersonas" layoutX="21.0" layoutY="72.0" prefHeight="129.0" prefWidth="582.0">
+        <columns>
+            <TableColumn fx:id="colId" prefWidth="36.0" text="id" />
+          <TableColumn fx:id="colNombre" prefWidth="160.0" text="Nombre" />
+          <TableColumn fx:id="colEdad" prefWidth="45.0" text="Edad" />
+            <TableColumn fx:id="colFecha" prefWidth="113.60003662109375" text="Fecha nacimiento" />
+            <TableColumn fx:id="colLenguaje" prefWidth="113.60003662109375" text="Lenguaje preferido" />
+            <TableColumn fx:id="colCarrera" prefWidth="113.60003662109375" text="Tiene carrera" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txtNombre" layoutX="27.0" layoutY="256.0" prefHeight="26.0" prefWidth="148.0" promptText="Nombre" />
+      <TextField fx:id="txtEdad" layoutX="182.0" layoutY="256.0" prefHeight="26.0" prefWidth="63.0" promptText="Edad" />
+      <TextField fx:id="txtFecha" layoutX="256.0" layoutY="257.0" prefHeight="26.0" prefWidth="84.0" promptText="Fecha de nacimiento" />
+      <CheckBox fx:id="checkCarrera" layoutX="490.0" layoutY="261.0" mnemonicParsing="false" text="Tiene carrera" />
+      <ComboBox fx:id="cbLenguaje" layoutX="349.0" layoutY="257.0" prefHeight="26.0" prefWidth="127.0" promptText="Lenguaje" />
+      <Label fx:id="lblId" layoutY="261.0" prefHeight="18.0" prefWidth="20.0" />
+      <Button fx:id="btnInsertar" layoutX="27.0" layoutY="322.0" mnemonicParsing="false" onAction="#onInsertar" prefHeight="26.0" prefWidth="84.0" text="Insertar" />
+      <Button fx:id="btnModificar" layoutX="122.0" layoutY="322.0" mnemonicParsing="false" onAction="#onModificar" prefHeight="26.0" prefWidth="91.0" text="Modificar" />
+      <Button fx:id="btnEliminar" layoutX="225.0" layoutY="322.0" mnemonicParsing="false" onAction="#onEliminar" prefHeight="26.0" prefWidth="91.0" text="Eliminar" />
+      <Button fx:id="btnCsv" layoutX="26.0" layoutY="383.0" mnemonicParsing="false" onAction="#onCsv" prefHeight="51.0" prefWidth="136.0" text="Archivo CSV a BBDD" />
+      <TextField fx:id="txtCsv" layoutX="181.0" layoutY="396.0" prefHeight="25.0" prefWidth="243.0" promptText="Ruta del archivo" />
+      <Separator layoutX="1.0" layoutY="360.0" prefHeight="17.0" prefWidth="635.0" />
+      <Button fx:id="btnJson" layoutX="26.0" layoutY="444.0" mnemonicParsing="false" onAction="#onJson" prefHeight="51.0" prefWidth="136.0" text="Archivo JSON a BBDD" />
+      <TextField fx:id="txtJson" layoutX="181.0" layoutY="457.0" prefHeight="25.0" prefWidth="243.0" promptText="Ruta del archivo" />
+      <Button fx:id="btnXml" layoutX="26.0" layoutY="505.0" mnemonicParsing="false" onAction="#onXml" prefHeight="51.0" prefWidth="136.0" text="Archivo XML a BBDD" />
+      <TextField fx:id="txtXml" layoutX="181.0" layoutY="518.0" prefHeight="25.0" prefWidth="243.0" promptText="Ruta del archivo" />
+      <Button fx:id="btnEscribirXml" layoutX="26.0" layoutY="579.0" mnemonicParsing="false" onAction="#onEscribirXml" prefHeight="51.0" prefWidth="136.0" text="Escribir archivo XML" />
+      <Separator layoutX="-3.0" layoutY="562.0" prefHeight="17.0" prefWidth="635.0" />
+      <TextField fx:id="txtEscribirXml" layoutX="181.0" layoutY="592.0" prefHeight="25.0" prefWidth="243.0" promptText="Ruta del archivo" />
+   </children>
+</AnchorPane>

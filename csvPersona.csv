@@ -1,0 +1,4 @@
+nombre;edad;fechaNacimiento;lenguaje;carrera
+Juan;30;1990/01/01;Java;true
+Ana;25;1995/01/01;Python;false
+Pedro;35;1985/01/01;Java;true

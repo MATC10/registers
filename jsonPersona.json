@@ -1,0 +1,23 @@
+[
+    {
+        "nombre": "Rafael",
+        "edad": 40,
+        "fechaNacimiento": "1982/01/01",
+        "lenguaje": "C#",
+        "carrera": false
+    },
+    {
+        "nombre": "Maria",
+        "edad": 28,
+        "fechaNacimiento": "1994/01/01",
+        "lenguaje": "JavaScript",
+        "carrera": true
+    },
+    {
+        "nombre": "Luis",
+        "edad": 45,
+        "fechaNacimiento": "1977/01/01",
+        "lenguaje": "Java",
+        "carrera": true
+    }
+]
